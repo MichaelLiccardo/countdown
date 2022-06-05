@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<title>test</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+    #output {
+        color: white;
+        font-family: arial;
+        font-size: 200px;
+        margin: 25px;
+        text-align: center;
+        position: relative;
+        height: 200px;
+        margin-top: 450px;
+
+    }
+</style>
+<script type="text/javascript">
+    let end = new Date();
+    end.setFullYear(2022,7,15)
+    let today = new Date();
+    let diff = end - today
+    days = diff/86400000
+    window.onload = function(){
+        document.getElementById('output').innerHTML = (days>=0) ? days : 0;
+};
+    </script>
+<body>
+    <div id="output"></div>
+</body>
+</html>
